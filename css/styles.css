@@ -207,8 +207,10 @@ ol {
 /*  #region                             Feature */
 .features-list {
   display: flex;
-  gap: 24px;
-  flex-basis: calc((100%-24) / 4);
+}
+
+.features-list-item {
+  flex-basis: calc((100% - 24px) / 3);
 }
 .visually-hidden {
   position: absolute;
@@ -250,7 +252,7 @@ ol {
 }
 .team-card {
   background-color: #ffffff;
-  flex-basis: calc((100% - 24px) / 4);
+  flex-basis: calc((100% - 24px) / 3);
   border-radius: 0 0 4px 4px;
 }
 /*  #endregion                             Team cards */
@@ -263,8 +265,9 @@ ol {
 }
 
 .port-list-item {
-  flex-basis: content;
+  max-width: 360px;
 }
+
 .port-text {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -278,9 +281,9 @@ ol {
 
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .footer-container {
-  padding: 100px 15px;
   display: flex;
   flex-direction: column;
 }
